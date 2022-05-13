@@ -106,10 +106,11 @@ class _HorizontalTimePickerState extends State<HorizontalTimePicker> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(left: 30),
-      height: 200,
+      margin: const EdgeInsets.only(left: 30,top: 5),
+      padding: const EdgeInsets.only(left: 10),
+      height: 190,
       child: GridView.builder(
-        shrinkWrap: true,
+       // shrinkWrap: true,
         controller: widget.scrollController ?? ScrollController(),
         scrollDirection: Axis.horizontal,
         itemCount: allDateTimeSlots.length,
@@ -139,8 +140,8 @@ class _HorizontalTimePickerState extends State<HorizontalTimePicker> {
         },
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           childAspectRatio: 0.5,
-          mainAxisSpacing: 5.0,
-          crossAxisSpacing: 3.0,
+          mainAxisSpacing: 10.0,
+          crossAxisSpacing: 10.0,
           crossAxisCount: 3,
         ),
       ),

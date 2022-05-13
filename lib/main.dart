@@ -127,7 +127,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   width: 2,
                   style: BorderStyle.solid,
                 )),
-                borderRadius: const BorderRadius.all(Radius.circular(5)),
+                borderRadius: const BorderRadius.all(Radius.circular(10)),
               ),
               selectedDecoration: const BoxDecoration(
                 color: Colors.black,
@@ -139,13 +139,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 borderRadius: BorderRadius.all(Radius.circular(5)),
               ),
               disabledDecoration: BoxDecoration(
-                color: Colors.grey.shade200,
+                color: Colors.grey.shade300,
+                boxShadow: [BoxShadow(
+                  color: Colors.grey.withOpacity(0.5),
+                  spreadRadius: 0,
+                  blurRadius: 1,
+                  offset: Offset(0, 0),
+                )
+                ],
                 border: Border.fromBorderSide(BorderSide(
-                  color: Colors.grey.shade200,
+                  color: Colors.grey.shade300,
                   width: 1,
                   style: BorderStyle.solid,
                 )),
-                borderRadius: const BorderRadius.all(Radius.circular(5)),
+                borderRadius: const BorderRadius.all(Radius.circular(10)),
               ),
               showDisabled: true,
             ),
@@ -183,7 +190,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   width: 2,
                   style: BorderStyle.solid,
                 )),
-                borderRadius: const BorderRadius.all(Radius.circular(5)),
+                borderRadius: const BorderRadius.all(Radius.circular(10)),
               ),
               selectedDecoration: const BoxDecoration(
                 color: Colors.black,
@@ -195,13 +202,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 borderRadius: BorderRadius.all(Radius.circular(5)),
               ),
               disabledDecoration: BoxDecoration(
-                color: Colors.grey.shade200,
+                color: Colors.red.shade200,
+                boxShadow: [BoxShadow(
+                  color: Colors.grey.withOpacity(0.5),
+                  spreadRadius: 5,
+                  blurRadius: 7,
+                  offset: Offset(0, 3),
+                )
+                ],
                 border: Border.fromBorderSide(BorderSide(
                   color: Colors.grey.shade200,
                   width: 1,
                   style: BorderStyle.solid,
                 )),
-                borderRadius: const BorderRadius.all(Radius.circular(5)),
+                borderRadius: const BorderRadius.all(Radius.circular(10)),
               ),
               showDisabled: true,
             ),
